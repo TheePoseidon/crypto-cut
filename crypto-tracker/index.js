@@ -29,4 +29,7 @@ app.get("/crypto/:coin", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+app.get("/", (req, res) => {
+  res.send("Welcome to the Cryptocurrency Tracker!");
+});
 
